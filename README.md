@@ -12,6 +12,6 @@ Dans votre [dashboard](https://app.rag-control.hosteur.com/):
 
 [https://raw.githubusercontent.com/hosteur-sa-ch/rag-hosteur-npm/main/manifest.jps](https://raw.githubusercontent.com/hosteur-sa-ch/rag-hosteur-npm/main/manifest.jps)
 
-## How to configure Filebeat 
+## How to 
 
 [Documentation Node.js](https://github.com/nodesource/distributions#rpminstall)
