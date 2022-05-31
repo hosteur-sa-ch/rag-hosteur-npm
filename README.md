@@ -10,7 +10,7 @@ Dans votre [dashboard](https://app.rag-control.hosteur.com/):
 
 2 - Copier l'url ci-contre (copy this url ) : 
 
-[https://raw.githubusercontent.com/FlorentHosteur/rag-hosteur-npm/main/manifest.jps](https://raw.githubusercontent.com/FlorentHosteur/rag-hosteur-npm/main/manifest.jps)
+[https://raw.githubusercontent.com/hosteur-sa-ch/rag-hosteur-npm/main/manifest.jps](https://raw.githubusercontent.com/hosteur-sa-ch/rag-hosteur-npm/main/manifest.jps)
 
 ## How to configure Filebeat 
 
