@@ -1,0 +1,56 @@
+version: 0.1
+type: update
+id: npm-addon
+name: Install Node.JS / NPM on PHP Node
+
+categories:
+- apps/dev-and-admin-tools
+
+targetNodes:
+  nodeType:
+    - apache
+    - apache2
+    - nginxphp
+    - nginx-dockerized
+    - nginxphp-dockerized
+    - litespeedphp
+    - lemp
+    - llsmp
+
+homepage: https://github.com/hosteur-sa-ch/rag-hosteur-npm.git
+baseUrl: https://raw.githubusercontent.com/hosteur-sa-ch/rag-hosteur-npm/main/
+logo: images/logo-hosteur_ico_2021.png
+
+description:
+  text: Install Node.js / NPM 
+  short: Package install LTS version Node.js
+
+globals:
+  env: ${env.name}
+  nodeID: ${targetNodes.id}
+
+
+onInstall:
+    - addrepos-nodejs
+    - deploy-nodejs
+
+onUninstall:
+    - remove-nodejs
+
+actions:
+  addrepos-nodejs:
+    - cmd[cp]: |-
+            rpm --import https://rpm.nodesource.com/pub/el/NODESOURCE-GPG-SIGNING-KEY-EL
+            curl -fsSL https://rpm.nodesource.com/setup_lts.x | bash -
+      user: root
+  
+  deploy-nodejs:
+    - cmd[cp]: |-
+            yum install –y nodejs
+      user: root
+  
+  remove-nodejs:
+    - cmd[cp]: yum remove nodejs -y
+      user: root
+
+success: Node.js installation sucess, to test it start node -version as command line
