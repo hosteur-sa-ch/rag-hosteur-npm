@@ -39,7 +39,7 @@ onUninstall:
     - remove-nodejs
 
 actions:
-  addrepos-nodejs:
+  addreposkey-nodejs:
     - cmd[cp]: |-
             rpm --import https://rpm.nodesource.com/pub/el/NODESOURCE-GPG-SIGNING-KEY-EL
       user: root
