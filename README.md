@@ -21,4 +21,8 @@ Dans votre [dashboard](https://app.rag-control.hosteur.com/):
 ## Alternative pour l'installation (Alternative procedure to install) : Node.js on EL7 
 
 1. Installation du plugin Yum Package Manager sur le noeud (Install plug in Yum Package Manager on Node) : [Manifest](https://raw.githubusercontent.com/jelastic-jps/packages-installer/master/manifest.jps)
-2. Copiert l'url du package RPM de votre choix sur la branche 16.x de node.js (paste url ok choosen package od branch 16.x) :  [Nodesource](https://rpm.nodesource.com/pub_16.x/el/7/x86_64/)
+2. Copier l'url du package RPM de votre choix sur la branche 16.x de node.js (paste url of choosen package from branch 16.x) :  [Nodesource branche 16.x](https://rpm.nodesource.com/pub_16.x/el/7/x86_64/)
+3. Tester l'installation (Test installation) 
+```
+curl -fsSL https://deb.nodesource.com/test | bash -
+```
